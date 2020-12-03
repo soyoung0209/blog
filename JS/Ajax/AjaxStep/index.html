@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ajax 실행 단계 | 기억보다 기록을</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Ajax 실행 단계">
+    <meta property="og:title" content="Ajax 실행 단계">
+    <meta property="og:description" content="Ajax 실행 단계">
+    <meta property="og:url" content="https://kyounghwan01.github.io/blog/JS/Ajax/AjaxStep/">
+    <link rel="preload" href="/blog/assets/css/0.styles.e7ab798a.css" as="style"><link rel="preload" href="/blog/assets/js/app.08b7d66c.js" as="script"><link rel="preload" href="/blog/assets/js/3.8bf228d1.js" as="script"><link rel="preload" href="/blog/assets/js/2.699bc930.js" as="script"><link rel="preload" href="/blog/assets/js/10.40a5bf00.js" as="script"><link rel="preload" href="/blog/assets/js/4.b4f7d8fc.js" as="script"><link rel="prefetch" href="/blog/assets/js/100.7b3b06b5.js"><link rel="prefetch" href="/blog/assets/js/101.dd3c74b0.js"><link rel="prefetch" href="/blog/assets/js/102.b5bcfabb.js"><link rel="prefetch" href="/blog/assets/js/103.c013c979.js"><link rel="prefetch" href="/blog/assets/js/104.31e6f992.js"><link rel="prefetch" href="/blog/assets/js/105.ea8c5e60.js"><link rel="prefetch" href="/blog/assets/js/106.4e7be997.js"><link rel="prefetch" href="/blog/assets/js/107.49a5ceff.js"><link rel="prefetch" href="/blog/assets/js/108.6a440319.js"><link rel="prefetch" href="/blog/assets/js/109.2f9abca2.js"><link rel="prefetch" href="/blog/assets/js/11.5d5ce285.js"><link rel="prefetch" href="/blog/assets/js/110.1782b5c1.js"><link rel="prefetch" href="/blog/assets/js/111.cf5b7c80.js"><link rel="prefetch" href="/blog/assets/js/112.d16af269.js"><link rel="prefetch" href="/blog/assets/js/113.6736c574.js"><link rel="prefetch" href="/blog/assets/js/114.911a0385.js"><link rel="prefetch" href="/blog/assets/js/115.bb8828d9.js"><link rel="prefetch" href="/blog/assets/js/116.31781210.js"><link rel="prefetch" href="/blog/assets/js/117.104cfd62.js"><link rel="prefetch" href="/blog/assets/js/118.062b78a8.js"><link rel="prefetch" href="/blog/assets/js/119.97b35b38.js"><link rel="prefetch" href="/blog/assets/js/12.119579f2.js"><link rel="prefetch" href="/blog/assets/js/120.5658ddef.js"><link rel="prefetch" href="/blog/assets/js/121.16cc6c9a.js"><link rel="prefetch" href="/blog/assets/js/122.3cddd70d.js"><link rel="prefetch" href="/blog/assets/js/123.e56bf697.js"><link rel="prefetch" href="/blog/assets/js/124.ca54e778.js"><link rel="prefetch" href="/blog/assets/js/125.db5aa9e8.js"><link rel="prefetch" href="/blog/assets/js/126.79211769.js"><link rel="prefetch" href="/blog/assets/js/127.601d24d2.js"><link rel="prefetch" href="/blog/assets/js/128.8a5258c2.js"><link rel="prefetch" href="/blog/assets/js/129.f25687f4.js"><link rel="prefetch" href="/blog/assets/js/13.0f04bf73.js"><link rel="prefetch" href="/blog/assets/js/130.a345e7f2.js"><link rel="prefetch" href="/blog/assets/js/131.93a0ba70.js"><link rel="prefetch" href="/blog/assets/js/132.0652d088.js"><link rel="prefetch" href="/blog/assets/js/133.b01a647e.js"><link rel="prefetch" href="/blog/assets/js/134.508d0324.js"><link rel="prefetch" href="/blog/assets/js/135.7044d9e8.js"><link rel="prefetch" href="/blog/assets/js/136.afa416eb.js"><link rel="prefetch" href="/blog/assets/js/137.2438977c.js"><link rel="prefetch" href="/blog/assets/js/138.c729ac8b.js"><link rel="prefetch" href="/blog/assets/js/139.b0c96564.js"><link rel="prefetch" href="/blog/assets/js/14.96582eb1.js"><link rel="prefetch" href="/blog/assets/js/140.6cd69ab5.js"><link rel="prefetch" href="/blog/assets/js/141.ce7335c1.js"><link rel="prefetch" href="/blog/assets/js/142.02bd20be.js"><link rel="prefetch" href="/blog/assets/js/143.10d72cc5.js"><link rel="prefetch" href="/blog/assets/js/144.7b1d9c6a.js"><link rel="prefetch" href="/blog/assets/js/145.7380c476.js"><link rel="prefetch" href="/blog/assets/js/146.33d8f382.js"><link rel="prefetch" href="/blog/assets/js/147.8fa1230f.js"><link rel="prefetch" href="/blog/assets/js/148.72b5f257.js"><link rel="prefetch" href="/blog/assets/js/149.289da75b.js"><link rel="prefetch" href="/blog/assets/js/15.9341887e.js"><link rel="prefetch" href="/blog/assets/js/150.42b6bfe6.js"><link rel="prefetch" href="/blog/assets/js/151.bfc73029.js"><link rel="prefetch" href="/blog/assets/js/152.8a002053.js"><link rel="prefetch" href="/blog/assets/js/153.af044d3c.js"><link rel="prefetch" href="/blog/assets/js/154.6bd7240a.js"><link rel="prefetch" href="/blog/assets/js/155.464d87b3.js"><link rel="prefetch" href="/blog/assets/js/156.ffc0e8d3.js"><link rel="prefetch" href="/blog/assets/js/157.e72f12c0.js"><link rel="prefetch" href="/blog/assets/js/158.1c9b7b42.js"><link rel="prefetch" href="/blog/assets/js/159.1a55a8c1.js"><link rel="prefetch" href="/blog/assets/js/16.28bcdf3b.js"><link rel="prefetch" href="/blog/assets/js/160.b82e4426.js"><link rel="prefetch" href="/blog/assets/js/161.32e18d12.js"><link rel="prefetch" href="/blog/assets/js/162.51b95b2f.js"><link rel="prefetch" href="/blog/assets/js/163.a93e1fdc.js"><link rel="prefetch" href="/blog/assets/js/164.aa99da6f.js"><link rel="prefetch" href="/blog/assets/js/165.322434e8.js"><link rel="prefetch" href="/blog/assets/js/166.b6be9b72.js"><link rel="prefetch" href="/blog/assets/js/167.902068de.js"><link rel="prefetch" href="/blog/assets/js/168.18aa7c69.js"><link rel="prefetch" href="/blog/assets/js/169.6fd23f38.js"><link rel="prefetch" href="/blog/assets/js/17.829880e2.js"><link rel="prefetch" href="/blog/assets/js/170.1fd6aa86.js"><link rel="prefetch" href="/blog/assets/js/171.6511115f.js"><link rel="prefetch" href="/blog/assets/js/172.2942018a.js"><link rel="prefetch" href="/blog/assets/js/173.35d7ba20.js"><link rel="prefetch" href="/blog/assets/js/174.f8577882.js"><link rel="prefetch" href="/blog/assets/js/175.8e0e17cc.js"><link rel="prefetch" href="/blog/assets/js/176.14cc8295.js"><link rel="prefetch" href="/blog/assets/js/177.33a8105e.js"><link rel="prefetch" href="/blog/assets/js/178.a5aeabb4.js"><link rel="prefetch" href="/blog/assets/js/179.17d4622a.js"><link rel="prefetch" href="/blog/assets/js/18.354e7a56.js"><link rel="prefetch" href="/blog/assets/js/180.60d4eddc.js"><link rel="prefetch" href="/blog/assets/js/181.3f1af52d.js"><link rel="prefetch" href="/blog/assets/js/182.a589396b.js"><link rel="prefetch" href="/blog/assets/js/19.252ebd3e.js"><link rel="prefetch" href="/blog/assets/js/20.4882b430.js"><link rel="prefetch" href="/blog/assets/js/21.56e9c036.js"><link rel="prefetch" href="/blog/assets/js/22.ca1e4502.js"><link rel="prefetch" href="/blog/assets/js/23.32a1a1c7.js"><link rel="prefetch" href="/blog/assets/js/24.1cc4bc43.js"><link rel="prefetch" href="/blog/assets/js/25.e34df7ec.js"><link rel="prefetch" href="/blog/assets/js/26.8a334da6.js"><link rel="prefetch" href="/blog/assets/js/27.557eb604.js"><link rel="prefetch" href="/blog/assets/js/28.b9b55989.js"><link rel="prefetch" href="/blog/assets/js/29.45e25f6d.js"><link rel="prefetch" href="/blog/assets/js/30.55e0cd5f.js"><link rel="prefetch" href="/blog/assets/js/31.0b5e6ac4.js"><link rel="prefetch" href="/blog/assets/js/32.d2c4cfd4.js"><link rel="prefetch" href="/blog/assets/js/33.18f9c971.js"><link rel="prefetch" href="/blog/assets/js/34.11476abb.js"><link rel="prefetch" href="/blog/assets/js/35.fe96853d.js"><link rel="prefetch" href="/blog/assets/js/36.84538c14.js"><link rel="prefetch" href="/blog/assets/js/37.cfdabf6b.js"><link rel="prefetch" href="/blog/assets/js/38.95b62947.js"><link rel="prefetch" href="/blog/assets/js/39.22fa33b1.js"><link rel="prefetch" href="/blog/assets/js/40.a6abae57.js"><link rel="prefetch" href="/blog/assets/js/41.674cecb0.js"><link rel="prefetch" href="/blog/assets/js/42.a6115ec8.js"><link rel="prefetch" href="/blog/assets/js/43.d79f9558.js"><link rel="prefetch" href="/blog/assets/js/44.1fc9ba14.js"><link rel="prefetch" href="/blog/assets/js/45.84dc8b85.js"><link rel="prefetch" href="/blog/assets/js/46.d4a23d10.js"><link rel="prefetch" href="/blog/assets/js/47.009f7158.js"><link rel="prefetch" href="/blog/assets/js/48.b83345ea.js"><link rel="prefetch" href="/blog/assets/js/49.de7a93f9.js"><link rel="prefetch" href="/blog/assets/js/5.d382091e.js"><link rel="prefetch" href="/blog/assets/js/50.354598cf.js"><link rel="prefetch" href="/blog/assets/js/51.ce1ee7f2.js"><link rel="prefetch" href="/blog/assets/js/52.9a7e8bc2.js"><link rel="prefetch" href="/blog/assets/js/53.ea959fe9.js"><link rel="prefetch" href="/blog/assets/js/54.a0cbfa69.js"><link rel="prefetch" href="/blog/assets/js/55.6e18fe7b.js"><link rel="prefetch" href="/blog/assets/js/56.312be570.js"><link rel="prefetch" href="/blog/assets/js/57.da0c6a49.js"><link rel="prefetch" href="/blog/assets/js/58.c5ad2765.js"><link rel="prefetch" href="/blog/assets/js/59.48cf1993.js"><link rel="prefetch" href="/blog/assets/js/6.defc92c3.js"><link rel="prefetch" href="/blog/assets/js/60.f1394116.js"><link rel="prefetch" href="/blog/assets/js/61.542a6902.js"><link rel="prefetch" href="/blog/assets/js/62.10756cf5.js"><link rel="prefetch" href="/blog/assets/js/63.2b3d9ae7.js"><link rel="prefetch" href="/blog/assets/js/64.a206646d.js"><link rel="prefetch" href="/blog/assets/js/65.690088ab.js"><link rel="prefetch" href="/blog/assets/js/66.abbffeba.js"><link rel="prefetch" href="/blog/assets/js/67.df74e95a.js"><link rel="prefetch" href="/blog/assets/js/68.e5b9ad31.js"><link rel="prefetch" href="/blog/assets/js/69.14181014.js"><link rel="prefetch" href="/blog/assets/js/7.2e24ae19.js"><link rel="prefetch" href="/blog/assets/js/70.65b8d4c6.js"><link rel="prefetch" href="/blog/assets/js/71.d45e351d.js"><link rel="prefetch" href="/blog/assets/js/72.b929d119.js"><link rel="prefetch" href="/blog/assets/js/73.b0422856.js"><link rel="prefetch" href="/blog/assets/js/74.d6099440.js"><link rel="prefetch" href="/blog/assets/js/75.5f72689f.js"><link rel="prefetch" href="/blog/assets/js/76.56666d15.js"><link rel="prefetch" href="/blog/assets/js/77.b6d7ef9c.js"><link rel="prefetch" href="/blog/assets/js/78.96e56f90.js"><link rel="prefetch" href="/blog/assets/js/79.b8a32db2.js"><link rel="prefetch" href="/blog/assets/js/8.314b1ce9.js"><link rel="prefetch" href="/blog/assets/js/80.befa432f.js"><link rel="prefetch" href="/blog/assets/js/81.2800983f.js"><link rel="prefetch" href="/blog/assets/js/82.e2234578.js"><link rel="prefetch" href="/blog/assets/js/83.99545c43.js"><link rel="prefetch" href="/blog/assets/js/84.4051c8dd.js"><link rel="prefetch" href="/blog/assets/js/85.777d0227.js"><link rel="prefetch" href="/blog/assets/js/86.d30f348f.js"><link rel="prefetch" href="/blog/assets/js/87.c59ac877.js"><link rel="prefetch" href="/blog/assets/js/88.9db34545.js"><link rel="prefetch" href="/blog/assets/js/89.a31a730b.js"><link rel="prefetch" href="/blog/assets/js/9.5f9ca9a4.js"><link rel="prefetch" href="/blog/assets/js/90.1ab89bc9.js"><link rel="prefetch" href="/blog/assets/js/91.25a52e1d.js"><link rel="prefetch" href="/blog/assets/js/92.cbf45e93.js"><link rel="prefetch" href="/blog/assets/js/93.6b8715da.js"><link rel="prefetch" href="/blog/assets/js/94.ae937a35.js"><link rel="prefetch" href="/blog/assets/js/95.b944fb8a.js"><link rel="prefetch" href="/blog/assets/js/96.385562b9.js"><link rel="prefetch" href="/blog/assets/js/97.cc097896.js"><link rel="prefetch" href="/blog/assets/js/98.70b94807.js"><link rel="prefetch" href="/blog/assets/js/99.3cde4533.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.e7ab798a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-6afd1fde><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">기억보다 기록을</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/tag/" class="nav-link">
+  Tag
+</a></div><div class="nav-item"><a href="/blog/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/Vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/blog/JS/" class="nav-link router-link-active">
+  JS
+</a></div><div class="nav-item"><a href="/blog/TS/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/blog/etc/" class="nav-link">
+  기타
+</a></div><div class="nav-item"><a href="/blog/dev-report/" class="nav-link">
+  개발일기
+</a></div><div class="nav-item"><a href="/blog/error-report/" class="nav-link">
+  에러모음
+</a></div><div class="nav-item"><a href="https://github.com/Kyounghwan01/blog/issues/new" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  건의하기
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Kyounghwan01" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/tag/" class="nav-link">
+  Tag
+</a></div><div class="nav-item"><a href="/blog/React/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/Vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/blog/JS/" class="nav-link router-link-active">
+  JS
+</a></div><div class="nav-item"><a href="/blog/TS/" class="nav-link">
+  TS
+</a></div><div class="nav-item"><a href="/blog/etc/" class="nav-link">
+  기타
+</a></div><div class="nav-item"><a href="/blog/dev-report/" class="nav-link">
+  개발일기
+</a></div><div class="nav-item"><a href="/blog/error-report/" class="nav-link">
+  에러모음
+</a></div><div class="nav-item"><a href="https://github.com/Kyounghwan01/blog/issues/new" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  건의하기
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/Kyounghwan01" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/JS/" aria-current="page" class="sidebar-link">Guide</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Ajax</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/JS/Ajax/AjaxDataCall/" class="sidebar-link">Ajax 이용 데이터 불러오기</a></li><li><a href="/blog/JS/Ajax/AjaxStep/" aria-current="page" class="active sidebar-link">Ajax 실행 단계</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/JS/Ajax/AjaxStep/#_1-xmlhttprequest란" class="sidebar-link">1. XMLHttpRequest란?</a></li><li class="sidebar-sub-header"><a href="/blog/JS/Ajax/AjaxStep/#_2-처리-결과를-받을-이벤트-리스너-등록" class="sidebar-link">2. 처리 결과를 받을 이벤트 리스너 등록</a></li></ul></li><li><a href="/blog/JS/Ajax/Promise_Ajax/" class="sidebar-link">Ajax + Promise</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JSbasic</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>functional-programming</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ajax-실행-단계"><a href="#ajax-실행-단계" class="header-anchor">#</a> Ajax 실행 단계</h1> <p>아래 순서대로 설명하겠습니다</p> <blockquote><ol><li>XMLHttpRequest (요청) 객체 생성</li> <li>처리 결과를 받을 이벤트 리스너 등록</li> <li>서버로 보낼 데이터 생성</li> <li>클라이언트와 서버 간의 연결 요청 준비 (<code>open()</code> 메서드 사용)
+<ol><li>서버로 보낼 데이터 전송방식 설정 (GET, POST)</li> <li>서버 응답 방식 설정 (동기, 비동기)</li></ol></li> <li>실제 데이터 전송</li> <li>응답 처리</li> <li>데이터 처리</li></ol></blockquote> <h2 id="_1-xmlhttprequest란"><a href="#_1-xmlhttprequest란" class="header-anchor">#</a> 1. XMLHttpRequest란?</h2> <blockquote><p>XMLHttpRequest 객체는 서버와 클라이언트 간 통신을 담당하는 객체입니다.
+Ajax를 통해 서버통신을 할 때 가장 먼저 생성해야 할 객체입니다.</p></blockquote> <p>아래는 XMLHttpRequest 객체를 생성하는 코드입니다.</p> <div class="language-js extra-class"><pre class="language-js"><code>window<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> xmlHttp <span class="token operator">=</span> <span class="token function">createXMLHTTPObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 1. 브라우저에 따른 XMLHttpRequest 생성</span>
+<span class="token keyword">function</span> <span class="token function">createXMLHTTPObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>XMLHttpRequest<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// IE7+, 크롬, 사파리, 파폭, 오페라는 XMLHttpRequest 객체를 제공합니다.</span>
+    xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// IE5,6 버전</span>
+    xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ActiveXObject</span><span class="token punctuation">(</span><span class="token string">&quot;Microsoft.XMLHTTP&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> xhr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>위 코드는 mdn에도 나와 있는 초기 객체 생성의 공식같은 내용입니다.</p> <h3 id="_1-1-xmlhttprequest의-주요-메서드"><a href="#_1-1-xmlhttprequest의-주요-메서드" class="header-anchor">#</a> 1.1 XMLHttpRequest의 주요 메서드</h3> <ol><li><code>open(method , url , async)</code>: return 없음
+두번째 매개변수 url이 요청 대상 url 입니다.
+첫번째 매개변수는 get,post로 나뉘며 get의 경우 두번째 url으로 부터 정보를 받습니다. post는 두번째 매개변수 url로 정보를 보냅니다.
+세번째 매개변수는 요청에 대한 응답을 기다리는 방식으로 true : 비동기 (기본값), false 동기 입니다.</li> <li><code>send(data)</code>: return 없음
+http 요청을 실제로 실행하는 메소드 (data : POST방식으로 보낼 데이터)
+이 메소드가 실행돼야 요청이 서버로 전달됩니다.</li></ol> <h3 id="_1-2-xmlhttprequest의-주요-프로퍼티"><a href="#_1-2-xmlhttprequest의-주요-프로퍼티" class="header-anchor">#</a> 1.2 XMLHttpRequest의 주요 프로퍼티</h3> <ol><li><code>readyState</code>:
+요청 상태를 나타내며, 이 프로퍼티를 이용하면 클라이언트와 서버간 데이터 통신이 현재 어디까지 진행됬는지 확인 가능합니다.
+0 : 초기화 되지 않은 상태
+1 : 로드되지 않은 상태 (즉, send() 메소드가 호출되지 않은 상태)
+2 : 로드된 상태, 헤더와 상태는 받았으나 아직 응답을 받지 못한 상태
+3 : 상호 작용 상태. 데이터의 일부분만 받은 상태
+4 : 완료 상태</li> <li><code>onreadystatechange</code> :
+요청 상태가 변경될 때 발생하는 이벤트 입니다.</li> <li><code>responseText</code> :
+서버 응답에 반환된 본문 콘텐츠 입니다</li> <li><code>responseXML</code> :
+서버 응답이 xml이면 xml 본문 콘텐츠로 채워집니다.</li> <li><code>state</code>:
+서버 응답상태
+200 = 성공
+404 = 페이지를 찾을 수 없음</li> <li><code>statusText</code> :
+응답으로 반환된 상태 메세지 입니다.</li></ol> <h2 id="_2-처리-결과를-받을-이벤트-리스너-등록"><a href="#_2-처리-결과를-받을-이벤트-리스너-등록" class="header-anchor">#</a> 2. 처리 결과를 받을 이벤트 리스너 등록</h2> <p>위에 쓰인 <code>onreadystatechange</code> 이벤트는 클라이언트와 서버 간의 데이터 전송 상태가 바뀔 때마다 발생하는 이벤트 입니다.
+즉, <strong>서버가 클라이언트에서 요청한 응답으로 보내는 데이터를 얻으려면 이 이벤트</strong>를 사용해야한다는 것입니다. 이를 위해서는 먼저 실제 데이터 전송이 이뤄지기 전 이벤트 리스너를 등록해야 합니다.</p> <div class="language-js extra-class"><pre class="language-js"><code>xmlHttp<span class="token punctuation">.</span>onreadystatechange <span class="token operator">=</span> on_ReadyStateChange<span class="token punctuation">;</span>
+</code></pre></div><p>이후 <code>open()</code> 메소드 ( 연결 요청 준비 단계 )와 <code>send()</code> 메소드 ( 실제 데이터 전송 )가 이루어지면 앞의 코드와 이벤트 리스너로 등록한 <code>on_ReadyStateChange()</code>리스너 함수가 실행되고 데이터를 주고 받는 과정에서 통신이 정상적으로 이루어 졌다면 그 통신의 시점만 알아내면 됩니다.</p> <p>통신 시점의 상태 알아내는 코드</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 응답 처리</span>
+<span class="token keyword">function</span> <span class="token function">on_ReadyStateChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * 0 = 초기화 전
+   * 1 = 로딩 중
+   * 2 = 로딩 됨
+   * 3 = 대화 상태
+   * 4 = 데이터 전송완료
+   */</span>
+  <span class="token comment">// 4 = 데이터 전송완료</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>xmlHttp<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 200 = 통신 성공, 404 = 페이지가 존재하지 않음</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>xmlHttp<span class="token punctuation">.</span>status <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * ----------------------------------
+       * 이 영역에서 서버에서 보낸 데이터를
+       * 타입(XML, JSON, CSV) 에 따라 처리
+       * ----------------------------------
+       */</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;error!.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>정상적으로 통신이 이루어졌다면 이때 서버에서 보내온 데이터가 담긴 responseText와 responseXML프로퍼티를 이용하면 됩니다.</p> <div class="tags" data-v-32ba69b0><a href="/blog/tag/#JS" data-v-32ba69b0>
+    #JS
+  </a></div> <div id="disqus_thread"></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/13/2020, 8:20:06 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/JS/Ajax/AjaxDataCall/" class="prev">
+        Ajax 이용 데이터 불러오기
+      </a></span> <span class="next"><a href="/blog/JS/Ajax/Promise_Ajax/">
+        Ajax + Promise
+      </a>
+      →
+    </span></p></div> <div id="disqus_thread" class="content" data-v-6afd1fde></div></main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.08b7d66c.js" defer></script><script src="/blog/assets/js/3.8bf228d1.js" defer></script><script src="/blog/assets/js/2.699bc930.js" defer></script><script src="/blog/assets/js/10.40a5bf00.js" defer></script><script src="/blog/assets/js/4.b4f7d8fc.js" defer></script>
+  </body>
+</html>
